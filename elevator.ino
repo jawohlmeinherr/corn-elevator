@@ -36,11 +36,11 @@ void loop() {
   int floor_up_state = digitalRead(limit_floor_up);
   int floor_down_state = digitalRead(limit_floor_down);
 
-  //digitalWrite(relay_move_down, HIGH);
-  //digitalWrite(relay_move_up, HIGH);
+  //digitalWrite(relay_move_down, HIGH); команда запуска лифта на движение вниз
+  //digitalWrite(relay_move_up, HIGH); команда запуска лифта на движение вверх
 
-  //digitalWrite(relay_move_down, LOW);
-  //digitalWrite(relay_move_up, LOW);
+  //digitalWrite(relay_move_down, LOW); команда остановки движения вниз
+  //digitalWrite(relay_move_up, LOW); команда остановки движения вверх
 
   if (elevator_button_up_state == HIGH) {
     if (floor_up_state == LOW) {
